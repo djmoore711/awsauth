@@ -6,7 +6,7 @@ A command-line tool to manage AWS IAM user credentials.
 
 ### Installation
 
-To use the `awsauth` CLI, you can build it from source. Standalone executables for various operating systems are not yet provided but may be available in future releases.
+To use the `awsauth` CLI, you can build it from source. Standalone executables for Windows and Linux are planned for future releases.
 
 ### Building from Source
 
