@@ -1,0 +1,21 @@
+id: org.example.awsauth
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: awsauth
+
+modules:
+  - name: awsauth
+    buildsystem: simple
+    build-commands:
+      - pip install --prefix=/app .
+    sources:
+      - type: dir
+        path: . # This assumes the flatpak-builder is run from the root of your awsauth project
+    # Add any Python dependencies here that are not part of the runtime
+    # boto3 is a dependency, so we need to ensure it's installed.
+    # If boto3 is not part of the freedesktop runtime, it needs to be listed here.
+    # For simplicity, we're letting pip install it from requirements.txt or pyproject.toml
+    # If you have a requirements.txt, you might do:
+    # - pip install --prefix=/app -r requirements.txt
+    # Or if using pyproject.toml, pip install . should handle it.
