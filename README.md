@@ -4,11 +4,17 @@ A command-line tool to manage AWS IAM user credentials.
 
 ## Quick Start
 
-### Installation
+### Download Standalone Executable
 
-To use the `awsauth` CLI, you can build it from source. Standalone executables for Windows and Linux are planned for future releases.
+For macOS, download the executable directly from our GitHub Releases:
 
-### Building from Source
+[**Download awsauth for macOS (v0.1.0)**](https://github.com/djmoore711/awsauth/releases/download/v0.1.0/awsauth)
+
+Once downloaded, move the `awsauth` executable to a directory included in your system's `PATH` (e.g., `/usr/local/bin`).
+
+### Installation (Building from Source)
+
+To use the `awsauth` CLI by building it from source (an alternative to downloading the standalone executable):
 
 1.  **Clone the repository:**
     ```bash
@@ -70,7 +76,7 @@ deactivate # if your virtual environment is active
 rm -rf ~/Code/awsauth
 ```
 
-If you installed a standalone executable (not yet provided, but for future reference), simply remove the executable file from your system.
+If you installed a standalone executable, simply remove the executable file from your system.
 
 1.  **Locate the executable:** Find where you placed the `awsauth` executable (e.g., `/usr/local/bin/awsauth`).
 2.  **Delete the file:**
@@ -83,4 +89,3 @@ If you installed a standalone executable (not yet provided, but for future refer
         del C:\path\to\awsauth.exe
         ```
     **Caution:** Be careful when using `rm` or `del` as they permanently delete files. Ensure you are deleting the correct file.
-
